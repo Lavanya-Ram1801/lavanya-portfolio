@@ -1,0 +1,31 @@
+:root {
+  /* Palette */
+  --bg: #0b080c;
+  --bg-2: #151016;
+  --wine: #70152d;
+  --crimson: #d72e52;
+  --pink: #ff668b;
+  --pink-soft: #f1b5c6;
+  --ivory: #fff6f2;
+  --muted: #b7aeb6;
+
+  /* Derived */
+  --line: rgba(241, 181, 198, 0.14);
+  --line-strong: rgba(255, 102, 139, 0.35);
+  --surface: rgba(21, 16, 22, 0.72);
+  --grad: linear-gradient(100deg, var(--crimson) 0%, var(--pink) 100%);
+  --glow: 0 0 40px rgba(255, 102, 139, 0.22);
+
+  /* Type */
+  --font-display: 'Fraunces', 'Playfair Display', Georgia, 'Times New Roman', serif;
+  --font-body: 'Manrope', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+
+  /* Layout */
+  --container: 1240px;
+  --gutter: clamp(20px, 5vw, 56px);
+  --radius: 22px;
+  --radius-sm: 12px;
+  --nav-h: 76px;
+
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+}
