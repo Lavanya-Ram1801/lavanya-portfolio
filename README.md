@@ -1,71 +1,128 @@
-# Lavanya R — Portfolio
+# ✦ Lavanya R — Personal Portfolio
 
-React + TypeScript + Vite portfolio with a semi-realistic anime hero, built around Lavanya's supplied character artwork.
+<p align="center">
+  <img src="public/og-image.jpg" alt="Lavanya R Portfolio Preview" width="100%" />
+</p>
 
-## Run it
+<h3 align="center">
+  A personal space where creativity meets technology. ✨
+</h3>
 
-```bash
-npm install
-npm run dev        # http://localhost:5173
-npm run build      # type-check + production build into /dist
-npm run preview    # serve the production build locally
-```
+<p align="center">
+  Designed and developed by me to showcase my journey,
+  technical skills, and projects in software development and AI.
+</p>
 
-Requires Node 18+ (Node 20/22 recommended).
+<p align="center">
+  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" />
+  <img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white" />
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" />
+</p>
 
-## Add your resume (the buttons stay hidden until you do)
+---
 
-Put your PDF at **`public/Lavanya_R_Resume.pdf`** and restart `npm run dev` (or rebuild).
-The "VIEW RESUME" buttons in the hero and contact sections appear automatically when the file exists,
-so the site never links to a missing file.
+## 🌸 About the Project
 
-## The character image
+This is my personal portfolio website, created to introduce myself, showcase my technical abilities, and present the projects I have worked on as an Artificial Intelligence and Data Science student.
 
-- Your original artwork is preserved, untouched, at `original-assets/lavanya-anime-original.png`.
-- `scripts/process-image.py` makes the web versions in `public/img/`:
-  it crops away the baked-in nav / script text / pill, removes a few small decorative marks from the
-  *background only*, and feathers the edges so she blends into the page. Her face, eyes and hair are not modified.
-- Re-run it with `npm run process-image` (needs Python 3 with `pillow`, `numpy`, `opencv-python`).
-- `public/og-image.jpg` (social preview) is generated from the same file.
+I wanted to build something that feels personal rather than follow a conventional portfolio template. I combined a modern interface, a distinctive anime-inspired character, subtle animations, and carefully designed sections to create a portfolio that reflects my personality and interest in technology.
 
-### About the eye tracking
+From the visual experience to the content structure, I developed this project to bring my ideas to life and create a professional space to share my work.
 
-The artwork is a single flattened illustration. Moving only the pupils would require redrawing the eyes
-and would distort her face, so that is **not** done. Instead, on mouse devices the whole portrait
-turns very slightly toward the cursor with layered parallax (glow, orbit lines, portrait). Touch devices get a calm idle float.
-Everything respects `prefers-reduced-motion`.
+**This portfolio represents my approach to learning, experimenting, designing, and building with technology.**
 
-If you later get layered artwork (separate eyes/pupils), `src/components/Character.tsx` is the place to add them.
+---
 
-## Editing content
+## ✨ Highlights
 
-| What | Where |
-| --- | --- |
-| Name, email, links, education, experience, certifications | `src/data/profile.ts` |
-| Projects (text, tech, repo / live links) | `src/data/projects.ts` |
-| Skills | `src/data/skills.ts` |
-| Colours (CSS custom properties) | `src/styles/tokens.css` |
+🎨 **Personalized Visual Design**
+- A distinctive anime-inspired hero section featuring my character artwork.
+- A carefully designed dark aesthetic with vibrant lighting and visual details.
+- Consistent colours, typography, and layouts throughout the website.
 
-**Project links:** only VeriFlow has a GitHub URL. When K-LINK AI or the Quiz get a repo or deployment,
-add `repo:` / `live:` to that project in `projects.ts`; the buttons render automatically.
+🌊 **Smooth Interactions & Animations**
+- Subtle portrait movement and layered parallax effects.
+- Scroll-triggered section animations.
+- Interactive navigation and custom visual elements.
+- Reduced-motion support for a more accessible experience.
 
-**Project previews** (`src/components/ProjectPreviews.tsx`) are illustrative HTML/CSS mock-ups, labelled as such on the page.
-They are not screenshots and contain no real data or metrics. Swap in real screenshots whenever you like.
+💻 **About Me**
+- Personal introduction and professional interests.
+- Educational background and technical journey.
+- Skills, experience, and certifications.
 
-## SEO
+🚀 **Projects Showcase**
+- Dedicated sections for my projects.
+- Technology details and project descriptions.
+- Repository and live-demo links where available.
+- Custom project previews created with HTML and CSS.
 
-Title, description, Open Graph / Twitter tags, theme colour and the LR favicon are in `index.html` and `public/favicon.svg`.
-After deploying, change `og:image` to an absolute URL on your domain (e.g. `https://your-site.com/og-image.jpg`).
+📄 **Resume & Contact**
+- Resume buttons appear when the resume PDF is available.
+- Contact section for professional communication.
+- A structured presentation of my professional profile.
 
-## Structure
+📱 **Responsive Experience**
+- Designed to provide a consistent experience across supported screen sizes.
+- Interactive effects adapt to different input devices.
+- Motion preferences are respected.
 
-```
-src/
-  components/   Navbar, Hero, Character, CustomCursor, About, Projects (+ProjectPreviews),
-                Skills, Experience, Education, Certifications, Contact, Footer, ...
-  data/         profile.ts, projects.ts, skills.ts
-  hooks/        useReducedMotion, useActiveSection, useReveal
-  styles/       tokens, base, hero, sections
-```
+---
 
-No animation library is used: motion is CSS + IntersectionObserver + requestAnimationFrame, which keeps the bundle small.
+## 🛠️ Tech Stack
+
+| Technology | Purpose |
+|---|---|
+| React | Building reusable UI components |
+| TypeScript | Type-safe application development |
+| Vite | Development server and production builds |
+| HTML5 | Structuring the website |
+| CSS3 | Styling, animations, and responsive layouts |
+| Python | Processing the character artwork |
+| Git & GitHub | Version control and project hosting |
+
+---
+
+## 🎭 A Design Detail I Care About
+
+The anime-inspired character is an important part of my portfolio's visual identity.
+
+Instead of treating it as a static decoration, I incorporated subtle movement and layered visual effects to make the hero section feel more dynamic.
+
+The original artwork is preserved separately, while processed versions are used for the website.
+
+Because the character artwork is a single illustration, the eyes are not independently animated. Instead, the portrait uses subtle movement and parallax effects to create a sense of interaction without distorting the original artwork.
+
+I also considered reduced-motion preferences to make the experience more comfortable for visitors.
+
+---
+
+## 📂 Project Structure
+
+```text
+lavanya-portfolio/
+│
+├── public/
+│   ├── img/
+│   ├── favicon.svg
+│   ├── og-image.jpg
+│   └── Lavanya_R_Resume.pdf
+│
+├── original-assets/
+│   └── lavanya-anime-original.png
+│
+├── scripts/
+│   └── process-image.py
+│
+├── src/
+│   ├── components/
+│   ├── data/
+│   ├── hooks/
+│   ├── styles/
+│   └── ...
+│
+├── index.html
+├── package.json
+├── vite.config.ts
+└── README.md
